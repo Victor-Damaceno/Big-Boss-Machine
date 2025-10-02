@@ -39,17 +39,12 @@
             document.getElementById('output').innerHTML = outputHTML; // atualiza o conteúdo da saída com o html gerado
             outputIMG.style.display = 'block';
 
-            var contador = 0;
-            while(contador < 0){
-                ++contador
-               
-            }
+      
             outputIMG.innerHTML = `<img id="imgOG" src="snakeCaixaLiquid.gif">`;
           
             setTimeout(substituirIMG,2250);
             
         }
-      
         function substituirIMG(){
             const imagem = document.getElementById('imgOG');
             imagem.src="snakeCaixaSolid.png"
