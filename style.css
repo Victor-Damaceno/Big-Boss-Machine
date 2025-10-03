@@ -30,7 +30,6 @@ body {
 
 .outputIMGstyle {
     height: 190px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,11 +39,11 @@ body {
 
 /* estilo para o contêiner principal */
 #container {
-    /*width: 100%; /* define a largura do contêiner */
-    /*height: 100%;*/
+    width: 100%; 
+    height: 100vh;
     padding-top: 10vw;
-    padding-bottom: 50vw;
-    margin: 5%;
+
+ 
     text-align: center;
     /* alinha o conteúdo ao centro */
     background-color: #61944a96;
@@ -52,18 +51,21 @@ body {
 
 .imagem {
     width: 300px;
-    height: 250;
+    height: 250px;
     display: flex;
-    margin: 1;
     justify-content: center;
     align-items: center;
 
 }
 
-/* estilo para o cabeçalho */
-h1 {
-    color: #1F2A44;
-    /* define a cor do texto do cabeçalho */
+@font-face {
+    font-family: 'Titulo';
+    src: url('../MGS-M-1.0.1/fontes/METAG___.TTF')format('WOFF');
+ 
+}
+h1{
+    font-family: 'Titulo';
+    color:#202719;
 }
 
 /* estilo para a entrada de texto */
@@ -74,6 +76,15 @@ input[type="text"] {
     /* define o tamanho da fonte */
     border-radius: 5px;
     /* define o raio das bordas */
+}
+.inputStyle{
+   padding: 10px;
+   margin: 1px;
+   background-color:#202719;
+   color:#A4AC98;
+   border-color:#A4AC98;
+   border-width: 2px;
+   border-radius: 1px;
 }
 
 /* estilo para seleção e botão */
@@ -107,8 +118,7 @@ button:hover {
 
 /* estilo para a saída de resultados */
 #output {
-    margin-top: 20px;
-    /* define a margem superior */
+    
     padding: 10px;
     /* define o preenchimento interno */
     border-radius: 5px;
@@ -130,12 +140,22 @@ button:hover {
     justify-self: flex-start;
 }
 
-@font-face {
-    font-family: 'Titulo';
-    src: url('../MGS-M-1.0.1/fontes/METAG___.TTF')format('WOFF');
- 
+
+#calculadora{
+    display:flex;
+    width: 90vw;
+    height: 100%;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
-h1{
-    font-family: 'Titulo';
-    
-}
+#calcularIMG{
+        height: 190px;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 10px;
+    margin-top: 10vh;
+    margin: 1px
+} 

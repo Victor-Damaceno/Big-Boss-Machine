@@ -69,6 +69,9 @@
                 validChars = '01'; // Para base binária, são válidos os dígitos 0 e 1
             }else if (inputValue.value == '' && (convertDecimal.value == true || convertHexadecimal.value == true)){
                 alert('Insira um valor válido');
+            }else if(!inputValue.value == '' || convertDecimal.unchecked == true){
+                alert('Erro')
+                return;
             }
 
         
